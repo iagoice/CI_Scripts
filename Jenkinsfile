@@ -1,4 +1,3 @@
-Pipeline {
     agent any
 
     stages {
@@ -6,4 +5,3 @@ Pipeline {
             sh'./build.sh'
         }
     }
-}
