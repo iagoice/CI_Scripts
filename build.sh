@@ -1,7 +1,7 @@
 #!/bin/bash -l
 source iosUtils.sh
 # Go to project folder
-cd ${WORKSPACE}/Saldo de Horas/SaldoDeHoras
+cd ../"Saldo de Horas"/SaldoDeHoras
 # Execute fastlane command to build
 # This lane is configured on Fastfile
 # Passing Fastlane Parameters
