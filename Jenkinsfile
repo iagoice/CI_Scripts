@@ -5,7 +5,8 @@ pipeline {
         stage ('build') {
             steps {
                 ls
-                sh('./build.sh')
+                sh 'cd ${WORKSPACE}/Saldo de Horas/SaldoDeHoras'
+                sh 'fastlane build'
             }
         }
     }
