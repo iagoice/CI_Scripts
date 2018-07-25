@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                sh 'cd ../Saldo de Horas/SaldoDeHoras'
+                sh 'cd ../Saldo\ de\ Horas/SaldoDeHoras'
                 sh 'fastlane build'
             }
         }
