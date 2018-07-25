@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh 'cd ../"Saldo de Horas"/SaldoDeHoras'
                 sh 'ls'
+                sh 'pwd'
                 sh 'fastlane build'
             }
         }
