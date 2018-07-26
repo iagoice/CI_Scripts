@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                sh 'chmod +x build.sh'
-                sh ('./build.sh')
+                sh('cd ../"Saldo de Horas"/SaldoDeHoras')
+                sh('pwd')
+                sh('fastlane build')
             }
         }
     }
