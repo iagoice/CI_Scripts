@@ -5,6 +5,7 @@ pipeline {
 
         stage ('SCM') {
             steps {
+                echo ('Updating project -----------')
                 dir('../Saldo de Horas/SaldoDeHoras') {
                     sh ('git pull origin master')
                 }
@@ -13,6 +14,7 @@ pipeline {
 
         stage ('Build') {
             steps {
+                echo ('Building project -----------')
                 dir('../Saldo de Horas/SaldoDeHoras') {
                     sh('fastlane build')
                 }
@@ -21,6 +23,7 @@ pipeline {
 
         stage ('Test') {
             steps {
+                echo('Running Tests -----------')
                 dir('../Saldo de Horas/SaldoDeHoras') {
                     sh('fastlane tests')
                 }
