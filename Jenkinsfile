@@ -12,7 +12,7 @@ pipeline {
         stage ('Build') {
             steps {
                 dir('../Saldo de Horas/SaldoDeHoras') {
-                    sh('fastlane gym')
+                    sh('fastlane xcodebuild')
                 }
             }
         }
