@@ -4,8 +4,10 @@ pipeline {
     stages {
 
         stage ('SCM') {
-            dir('../Saldo de Horas/SaldoDeHoras') {
-                sh ('git pull')
+            steps {
+                dir('../Saldo de Horas/SaldoDeHoras') {
+                    sh ('git pull')
+                }
             }
         }
 
