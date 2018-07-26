@@ -5,7 +5,7 @@ pipeline {
         stage ('build') {
             steps {
                 dir('../Saldo de Horas/SaldoDeHoras') {
-                    sh('fastlane build')
+                    sh('fastlane gym')
                 }
             }
         }
