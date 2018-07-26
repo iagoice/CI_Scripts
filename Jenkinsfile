@@ -6,7 +6,7 @@ pipeline {
         stage ('SCM') {
             steps {
                 dir('../Saldo de Horas/SaldoDeHoras') {
-                    sh ('git pull')
+                    sh ('git pull origin master')
                 }
             }
         }
